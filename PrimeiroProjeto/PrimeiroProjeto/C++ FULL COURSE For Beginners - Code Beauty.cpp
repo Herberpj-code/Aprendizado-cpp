@@ -7,7 +7,27 @@ int main()
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
 
-
+	//==============================================================================
+	//Exercício para contar os digitos de um número
+	//int number;
+	//cout << "Digite um número: " << endl;
+	//cin >> number;
+	//if (number == 0)
+	//	cout << "Você digitou o número 0 meu chapa, ai não. \n";	
+	//else 
+	//{
+	// if(number < 0)
+	// number = -1 * number;
+	// 
+	//	int counter = 0;
+	//	while (number > 0) 
+	//	{
+	//		//number = number / 10;
+	//		number /= 10; // Mesma coisa que a linha de cima, mas simplificado
+	//		counter++;
+	//	}
+	//	cout << "Seu número tem: " << counter << " Dígito(s)" << endl;
+	//}
 
 
 	//==============================================================================
