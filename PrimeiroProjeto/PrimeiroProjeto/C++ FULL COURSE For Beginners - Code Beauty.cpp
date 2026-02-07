@@ -1,19 +1,48 @@
 #include <iostream>
 
-using namespace std;
+//using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
-	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
+	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "Ã©".
+	//system("cls");  // Usado para deixar o console limpo dos cÃ³digos anteriores a essa linha
 
 	//==============================================================================
-	//Exercício para contar os digitos de um número
+	//Como um bom programador, fui resolver um problema e criei outro, arrumei o UTF-8 que tava dando pau no vscode e buguei o do visual studio kkkkkkkkkkk
+	//==============================================================================
+
+
+	//==============================================================================
+	// Um pouco frustrante, eu queria aprender a fazer percorrendo o numero digitado como um array e reorganizando, a formula matematica nao e algo que eu conseguiria chegar na intuiÃ§Ã£o provavelmente
+	//Exercï¿½cio de inverter um nï¿½mero
+
+	//int numero{};
+	//int numeroReverso{};
+
+	//std::cout << "Digite seu nÃºmero: ";
+	//std::cin >> numero;
+
+	//a logica por tras ï¿½ multiplicar por 10 a dezena do primeiro numero e ir somando de trï¿½s para frente os outros digitos.
+
+	//while (numero != 0)
+	//{
+	//	numeroReverso *= 10;
+	//	int ultimoDigito = numero % 10;
+	//	numeroReverso += ultimoDigito;
+	//	numero /= 10;
+	//}
+
+	//std::cout << numeroReverso;
+	//==============================================================================
+
+
+	//==============================================================================
+	//Exercï¿½cio para contar os digitos de um nï¿½mero
 	//int number;
-	//cout << "Digite um número: " << endl;
+	//cout << "Digite um numero: " << endl;
 	//cin >> number;
 	//if (number == 0)
-	//	cout << "Você digitou o número 0 meu chapa, ai não. \n";	
+	//	cout << "Voce digitou o numero 0 meu chapa, ai nÃ£o. \n";	
 	//else 
 	//{
 	// if(number < 0)
@@ -26,49 +55,49 @@ int main()
 	//		number /= 10; // Mesma coisa que a linha de cima, mas simplificado
 	//		counter++;
 	//	}
-	//	cout << "Seu número tem: " << counter << " Dígito(s)" << endl;
+	//	cout << "Seu numero tem: " << counter << " Digito(s)" << endl;
 	//}
 
 
 	//==============================================================================
 	//Aula de loops, "do" e "while"
-	//Escrever todos os números entre 100 e 500 que são divisíveis por 3 e por 5.
+	//Escrever todos os numeros entre 100 e 500 que sao divisiveis por 3 e por 5.
 
 	//int counter = 100;
 	//while (counter <= 500)
 	//{
 	//	if (counter % 3 == 0 && counter % 5 == 0)
-	//		cout << counter << " É divisivel por 3 e por 5\n";
-	//	counter++; // Já tinha entendido antes de terminar o video, ainda bem, sucesso!
+	//		cout << counter << " ï¿½ divisivel por 3 e por 5\n";
+	//	counter++; // Ja tinha entendido antes de terminar o video, ainda bem, sucesso!
 	//}
 	//==============================================================================
 	
 
 
 	//==============================================================================
-	//Exercício, programa para apresentar quantos dias o mês digitado pelo usuário possui.
+	//Exercï¿½cio, programa para apresentar quantos dias o mï¿½s digitado pelo usuï¿½rio possui.
 	//Formula que vamos utilizar para anos bissexto (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
 	//int year, month;
-	//cout << "Entre o ano e o mês : ";
+	//cout << "Entre o ano e o mï¿½s : ";
 	//cin >> year >> month;
 
 
 	//switch (month)
 	//{
-	//case 2: (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) ? // Aplicação do ternário com o switch
-	//	cout << "Esse mês tem 29 dias" : cout << "Esse mês tem 28 dias"; break;
+	//case 2: (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) ? // Aplicaï¿½ï¿½o do ternï¿½rio com o switch
+	//	cout << "Esse mï¿½s tem 29 dias" : cout << "Esse mï¿½s tem 28 dias"; break;
 	//case 4:
 	//case 6:
 	//case 9:
-	//case 11: cout << "Esse mês tem 30 dias"; break;
+	//case 11: cout << "Esse mï¿½s tem 30 dias"; break;
 	//case 1:
 	//case 3:
 	//case 5:
 	//case 7:
 	//case 8:
 	//case 10:
-	//case 12:  cout << "Esse mês tem 31 dias"; break;
-	//default: cout << "Digite um número de mês válido";
+	//case 12:  cout << "Esse mï¿½s tem 31 dias"; break;
+	//default: cout << "Digite um nï¿½mero de mï¿½s vï¿½lido";
 	//}
 	//==============================================================================
 
@@ -95,7 +124,7 @@ int main()
 	//	if (checarInteiro1 && checarInteiro2)
 	//		cout << numero1 << operador << numero2 << "=" << (int)numero1 % (int)numero2;
 	//	else
-	//		cout << "Operação inválida";
+	//		cout << "Operaï¿½ï¿½o invï¿½lida";
 	//	break;
 	//default:
 	//	cout << "Digite um operador certo espertinho" << endl;
@@ -104,35 +133,35 @@ int main()
 	
 	
 	//==============================================================================
-	//Operador ternário/condicional (muitas vezes utilizado no lugar de if/else)
+	//Operador ternï¿½rio/condicional (muitas vezes utilizado no lugar de if/else)
 
 	//int numeroDigitado, numeroPalpite;
-	//cout << "Digite o número que deverá ser adivinhado: ";
+	//cout << "Digite o nï¿½mero que deverï¿½ ser adivinhado: ";
 	//cin >> numeroDigitado;
-	//system("cls"); //Limpando o console para sumir com o número Digitado que deverá ser adivinhado
+	//system("cls"); //Limpando o console para sumir com o nï¿½mero Digitado que deverï¿½ ser adivinhado
 
-	//cout << "Escreva o seu número palpite: ";
+	//cout << "Escreva o seu nï¿½mero palpite: ";
 	//cin >> numeroPalpite;
 
 
-	//Solução comum
+	//Soluï¿½ï¿½o comum
 	//if (numeroDigitado == numeroPalpite)
-	//	cout << "Parabéns, você acertou o número!!";
+	//	cout << "Parabï¿½ns, vocï¿½ acertou o nï¿½mero!!";
 	//else
-	//	cout << "Infelizmente você errou o número, tente novamente!";
+	//	cout << "Infelizmente vocï¿½ errou o nï¿½mero, tente novamente!";
 
-	//Solução do operador ternário
-	//(numeroDigitado == numeroPalpite)? cout << "Parabéns, você acertou o número!!" : cout << "Infelizmente você errou o número, tente novamente!";
+	//Soluï¿½ï¿½o do operador ternï¿½rio
+	//(numeroDigitado == numeroPalpite)? cout << "Parabï¿½ns, vocï¿½ acertou o nï¿½mero!!" : cout << "Infelizmente vocï¿½ errou o nï¿½mero, tente novamente!";
 
-	// "?" funciona para checar a condição, é como se fosse o IF
-	// ":" funciona retornando o que precisa ser retornado se a condição não for atingida, é como se fosse o ELSE
-	// Essa forma é a mais utilizada, apesar de ser a menos legível a princípio.
+	// "?" funciona para checar a condiï¿½ï¿½o, ï¿½ como se fosse o IF
+	// ":" funciona retornando o que precisa ser retornado se a condiï¿½ï¿½o nï¿½o for atingida, ï¿½ como se fosse o ELSE
+	// Essa forma ï¿½ a mais utilizada, apesar de ser a menos legï¿½vel a princï¿½pio.
 	//==============================================================================
 
 
 	
 	//==============================================================================
-	//Exercício prático
+	//Exercï¿½cio prï¿½tico
 	//Calculadora de IMC
 	//Peso(kg) / altura(m) * altura(m)
 	//Abaixo de 18,5 = Peso baixo
@@ -142,10 +171,10 @@ int main()
 	//Entre 35 a 39,9 = Obesidade 2
 	//Acima de 40 = Obesidade 3
 
-	//float kg = 0;      //Está em float pois é previsto que os valores tenham no máximo duas casas decimais
-	//float height = 0;  //Começando a colocar as variáveis em inglês por boa prática
+	//float kg = 0;      //Estï¿½ em float pois ï¿½ previsto que os valores tenham no mï¿½ximo duas casas decimais
+	//float height = 0;  //Comeï¿½ando a colocar as variï¿½veis em inglï¿½s por boa prï¿½tica
 
-	//cout << "Bem vindo a calculadora de IMC, para começarmos digite sua altura em metros, ex: 1.75 : " << endl;
+	//cout << "Bem vindo a calculadora de IMC, para comeï¿½armos digite sua altura em metros, ex: 1.75 : " << endl;
 	//cin >> height;
 	//cout << "Perfeito, agora por favor digite seu peso no seguinte formato de ex: 82.5 : " << endl;
 	//cin >> kg;
@@ -153,30 +182,30 @@ int main()
 	//float imc = kg / (height * height);
 
 	//if (imc < 18.5)
-	//	cout << "Seu imc é de: " << imc << endl << "Seu peso está abaixo do esperado, você precisa se alimentar mais, consulte um nutricionista!";
+	//	cout << "Seu imc ï¿½ de: " << imc << endl << "Seu peso estï¿½ abaixo do esperado, vocï¿½ precisa se alimentar mais, consulte um nutricionista!";
 	//else if (imc >= 18.5 && imc <= 24.9)
-	//	cout << "Seu imc é de: " << imc << endl << "Parabéns, seu peso está dentro da conformidade, diminuindo assim seu risco de doenças relacionadas a obesidade, continue assim!";
+	//	cout << "Seu imc ï¿½ de: " << imc << endl << "Parabï¿½ns, seu peso estï¿½ dentro da conformidade, diminuindo assim seu risco de doenï¿½as relacionadas a obesidade, continue assim!";
 	//else if (imc >= 25 && imc <= 29.9)
-	//	cout << "Seu imc é de: " << imc << endl << "Seu peso está um pouco acima do esperado, atividade física e boa alimentação lhe ajudariam, consulte um nutricionista!";
+	//	cout << "Seu imc ï¿½ de: " << imc << endl << "Seu peso estï¿½ um pouco acima do esperado, atividade fï¿½sica e boa alimentaï¿½ï¿½o lhe ajudariam, consulte um nutricionista!";
 	//else if (imc >= 30 && imc <= 34.9)
-	//	cout << "Seu imc é de: " << imc << endl << "Você atingiu o primeiro grau de obesidade, é crucial que você consulte um especialista antes que a sua situação piore!";
+	//	cout << "Seu imc ï¿½ de: " << imc << endl << "Vocï¿½ atingiu o primeiro grau de obesidade, ï¿½ crucial que vocï¿½ consulte um especialista antes que a sua situaï¿½ï¿½o piore!";
 	//else if (imc >= 35 && imc <= 39.9)
-	//	cout << "Seu imc é de: " << imc << endl << "Você atingiu o segundo grau de obesidade, consulte um especialista o quanto antes para que você possa melhorar sua qualidade de vida!";
+	//	cout << "Seu imc ï¿½ de: " << imc << endl << "Vocï¿½ atingiu o segundo grau de obesidade, consulte um especialista o quanto antes para que vocï¿½ possa melhorar sua qualidade de vida!";
 	//else if (imc >= 40)
-	//	cout << "Seu imc é de: " << imc << endl << "Você atingiu o terceiro grau de obesidade, procure ajuda médica urgente!";
+	//	cout << "Seu imc ï¿½ de: " << imc << endl << "Vocï¿½ atingiu o terceiro grau de obesidade, procure ajuda mï¿½dica urgente!";
 	//==============================================================================
 
 
 
 	//==============================================================================
-	//Programa para trocar o valor de duas variáveis
+	//Programa para trocar o valor de duas variï¿½veis
 
 	//int valor1 = 5;
 	//int valor2 = 10;
 	//int valor3 = 0;
 
-	//valor3 = valor1; //colocando o valor de 1 no valor 3 que está zerado
-	//valor1 = valor2; //transformando o valor de 1 no valor de 2, lembrando que o valor de 1 está salvo no valor de 3 que estava zerado
+	//valor3 = valor1; //colocando o valor de 1 no valor 3 que estï¿½ zerado
+	//valor1 = valor2; //transformando o valor de 1 no valor de 2, lembrando que o valor de 1 estï¿½ salvo no valor de 3 que estava zerado
 	//valor2 = valor3; //transformando o valor de 2 no valor de 1 usando o valor de 3 que estava salvo com o valor de 1;
 
 	//cout << valor1 << endl << valor2; //sucesso
@@ -189,7 +218,7 @@ int main()
 	//valor1 = valor1 + valor2; // valor1 passa a ser 15 (5+10)
 	//valor2 = valor1 - valor2; // valor2 passa a ser 5 (15-10)
 	//valor1 = valor1 - valor2; // valor3 passa a ser 10 (15-5)
-	//É um pensamento lógico/matemático, não é fácil chegar a essa conclusão, mas muitas vezes é isso que vai precisar ser feito, pensar fora da caixa.
+	//ï¿½ um pensamento lï¿½gico/matemï¿½tico, nï¿½o ï¿½ fï¿½cil chegar a essa conclusï¿½o, mas muitas vezes ï¿½ isso que vai precisar ser feito, pensar fora da caixa.
 
 	//cout << valor1 << endl << valor2;
 	//==============================================================================
@@ -198,10 +227,10 @@ int main()
 	//==============================================================================
 	//Aula de Operadores
 	//Para operadores de falso ou true, falso = 0 / true = 1
-	//Operadores logicos "&&" = E (Obrigatório todas as condições serem verdadeiras)
-	//					 "||" = OU (usado para verificar vários argumentos e encontrar pelo menos 1 condição necessária que seja verdadeira)
-	//					 "!" = Não igual (Obrigatório todas as condições serem falsas, retorna verdadeiro se sim)
-	//IMPORTANTE:  OPERADORES ARITMÉTICOS SEMPRE TEM PRIORIDADE SOBRE OS OPERADORES LÓGICOS.
+	//Operadores logicos "&&" = E (Obrigatï¿½rio todas as condiï¿½ï¿½es serem verdadeiras)
+	//					 "||" = OU (usado para verificar vï¿½rios argumentos e encontrar pelo menos 1 condiï¿½ï¿½o necessï¿½ria que seja verdadeira)
+	//					 "!" = Nï¿½o igual (Obrigatï¿½rio todas as condiï¿½ï¿½es serem falsas, retorna verdadeiro se sim)
+	//IMPORTANTE:  OPERADORES ARITMï¿½TICOS SEMPRE TEM PRIORIDADE SOBRE OS OPERADORES Lï¿½GICOS.
 	// 
 	//int counter = 7;
 	//cout << ++counter << endl;
@@ -210,93 +239,93 @@ int main()
 	
 	//int x = 5;
 
-	//x %= 7; // Ambas as operações são iguais, só escritas de forma diferente, o += vai somar o valor da direita com o valor da esquerda.
-	//x = x + 7; // Ambas as operações são iguais, só escritas de forma diferente, o += vai somar o valor da direita com o valor da esquerda.
+	//x %= 7; // Ambas as operaï¿½ï¿½es sï¿½o iguais, sï¿½ escritas de forma diferente, o += vai somar o valor da direita com o valor da esquerda.
+	//x = x + 7; // Ambas as operaï¿½ï¿½es sï¿½o iguais, sï¿½ escritas de forma diferente, o += vai somar o valor da direita com o valor da esquerda.
 	
 	//==============================================================================
 
 
 
 	//==============================================================================
-	// Aula de IF e Else - com Exercício
-	// Usuário deve inserir o tamanho dos 3 lados de um triângulo
-	// O programa deve escrever se o triângulo é equilátero, isósceles ou escaleno.
+	// Aula de IF e Else - com Exercï¿½cio
+	// Usuï¿½rio deve inserir o tamanho dos 3 lados de um triï¿½ngulo
+	// O programa deve escrever se o triï¿½ngulo ï¿½ equilï¿½tero, isï¿½sceles ou escaleno.
 	// Nota, resolvi sozinho e depois acompanhei o tutorial
-	// Aprendi que o operador "&&" é necessário ser utilizado quando precisamos fazer mais de uma comparação no statement do IF ou ELSE.
-	// Também aprendi o sinal de diferente "!=" em c++, o sinal de "==" é o igual do c++, esse eu ja tinha tido contato.
-	// Talvez na proxima vez seja mais sensato declarar como float os valores do triângulo.
+	// Aprendi que o operador "&&" ï¿½ necessï¿½rio ser utilizado quando precisamos fazer mais de uma comparaï¿½ï¿½o no statement do IF ou ELSE.
+	// Tambï¿½m aprendi o sinal de diferente "!=" em c++, o sinal de "==" ï¿½ o igual do c++, esse eu ja tinha tido contato.
+	// Talvez na proxima vez seja mais sensato declarar como float os valores do triï¿½ngulo.
 
 	//int lado1, lado2, lado3;
-	//cout << "Por favor insira o valor do lado 1 de seu triângulo = ";
+	//cout << "Por favor insira o valor do lado 1 de seu triï¿½ngulo = ";
 	//cin >> lado1;
-	//cout << "Por favor insira o valor do lado 2 de seu triângulo = ";
+	//cout << "Por favor insira o valor do lado 2 de seu triï¿½ngulo = ";
 	//cin >> lado2;
-	//cout << "Por favor insira o valor do lado 3 de seu triângulo = ";
+	//cout << "Por favor insira o valor do lado 3 de seu triï¿½ngulo = ";
 	//cin >> lado3;
 
 	//if (lado1 == lado2 && lado1 == lado3)
 	//	{
-	//	cout << "Seu triângulo é Equilátero";
+	//	cout << "Seu triï¿½ngulo ï¿½ Equilï¿½tero";
 	//	}
-	//else if (lado1 != lado2 && lado1 != lado3 && lado2 != lado3)  // Nota, nesse "else if" na aula não foi utilizado dessa forma, e sim com o else {} e um novo if dentro abrindo outro {}
-	//	{															// Houve também uma "elegância" aplicada no código, visto que foi recomendado tirar os {} dos statements de if,else que executam															
-	//	cout << "Seu triângulo é Escaleno";							// apenas um comando
+	//else if (lado1 != lado2 && lado1 != lado3 && lado2 != lado3)  // Nota, nesse "else if" na aula nï¿½o foi utilizado dessa forma, e sim com o else {} e um novo if dentro abrindo outro {}
+	//	{															// Houve tambï¿½m uma "elegï¿½ncia" aplicada no cï¿½digo, visto que foi recomendado tirar os {} dos statements de if,else que executam															
+	//	cout << "Seu triï¿½ngulo ï¿½ Escaleno";							// apenas um comando
 	//	}
 	//else
 	//	{
-	//	cout << "Seu triângulo é Isósceles";
+	//	cout << "Seu triï¿½ngulo ï¿½ Isï¿½sceles";
 	//	}
 	//==============================================================================
 
 	//==============================================================================
-	//Programa para verificar se o número é impar ou par. Exercício
+	//Programa para verificar se o nï¿½mero ï¿½ impar ou par. Exercï¿½cio
 	//int number;
-	//cout << "Por favor digite o seu número" << endl;
+	//cout << "Por favor digite o seu nï¿½mero" << endl;
 	//cin >> number;
 	
 	//if (number % 2 == 0) 
 	//{
-	//	cout << "O número é par";
+	//	cout << "O nï¿½mero ï¿½ par";
 	//}
 	//else 
 	//{
-	//	cout << "O número é impar";
+	//	cout << "O nï¿½mero ï¿½ impar";
 	//}
 	//==============================================================================
 
 
 
 	//==============================================================================
-	//Exercício de transformar uma frase para ASCII em números.
-	//char c1; //Declarando variáveis sem inicialização para o usuário poder digitar.
+	//Exercï¿½cio de transformar uma frase para ASCII em nï¿½meros.
+	//char c1; //Declarando variï¿½veis sem inicializaï¿½ï¿½o para o usuï¿½rio poder digitar.
 	//char c2;
 	//char c3;
 
-	//char c1, c2, c3, c4, c5;  //Forma mais fácil de criar várias variáveis do mesmo tipo.
+	//char c1, c2, c3, c4, c5;  //Forma mais fï¿½cil de criar vï¿½rias variï¿½veis do mesmo tipo.
 
 	//cout << "Por favor, formule sua frase: " << endl;
 	//cin >> c1 >> c2 >> c3 >> c4 >> c5;
-	//cout << "Sua frase em ASCII é a seguinte: " << int(c1) << " " << int(c2) << " "
+	//cout << "Sua frase em ASCII ï¿½ a seguinte: " << int(c1) << " " << int(c2) << " "
 	//											<< int(c3) << " " << int(c4) << " " << int(c5); //Transformando tudo em ASCII
 	//==============================================================================
 
 
 	//==============================================================================
-	//Exemplos de uso de conversão ASCII
+	//Exemplos de uso de conversï¿½o ASCII
 	//cout << (int)'a' << endl; //Transformando o char "a" em Inteiro, convertendo para a tabela ASCII
-	//cout << int('a') << endl; //Outra forma de realizar essa transformação
-	//cout << int('A') << endl; //Mostrando o valor de "A" maiúsculo, é diferente do a minúsculo.
-	//cout << char(65) << endl; //Convertendo o número 65 para uma letra, no caso pela tabela ASCII ele vai se tornar no "A" maiúsculo.
+	//cout << int('a') << endl; //Outra forma de realizar essa transformaï¿½ï¿½o
+	//cout << int('A') << endl; //Mostrando o valor de "A" maiï¿½sculo, ï¿½ diferente do a minï¿½sculo.
+	//cout << char(65) << endl; //Convertendo o nï¿½mero 65 para uma letra, no caso pela tabela ASCII ele vai se tornar no "A" maiï¿½sculo.
 	//==============================================================================
 
 	//==============================================================================
 	//Aula de datatype , colocando apenas novos aprendizados
-	//int intMax = INT_MAX; //O INT_MAX pega o maior valor que a variável tipo "int" pode chegar
+	//int intMax = INT_MAX; //O INT_MAX pega o maior valor que a variï¿½vel tipo "int" pode chegar
 	//cout << intMax << endl;
-	//cout << intMax + 1; // Isso vai gerar um data overflow, onde o valor vai até o mínimo, ficando no menor número que INT pode ir (negativo)
+	//cout << intMax + 1; // Isso vai gerar um data overflow, onde o valor vai atï¿½ o mï¿½nimo, ficando no menor nï¿½mero que INT pode ir (negativo)
 	//==============================================================================
 
-	// return 0;  //Return 0 padrão
+	// return 0;  //Return 0 padrï¿½o
 
-	system("pause>0"); // Forma mais elegante de parar o programa se o retorno não for 0 (falhar)	
+	system("pause>0"); // Forma mais elegante de parar o programa se o retorno nï¿½o for 0 (falhar)	
 }

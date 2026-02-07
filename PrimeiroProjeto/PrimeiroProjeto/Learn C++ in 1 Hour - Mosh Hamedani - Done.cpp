@@ -12,6 +12,7 @@ int ohmyboy()
 
 	//system("cls");  // Usado para deixar o console limpo
 
+
 	//__________________________________________________________________________________
 	//Solução para o programa de rodar o dado.
 	//const int minValue = 1;
@@ -62,7 +63,6 @@ int ohmyboy()
 
 	//int number {}; //Inicializando sem valor, o compilador inicia a variável atribuindo "0" para ela.
 	//__________________________________________________________________________________
-
 
 
 	//__________________________________________________________________________________
@@ -171,7 +171,6 @@ int ohmyboy()
 
 	//std::cout << z; // O valor não vai ter casas decimais se os valores estiverem declarados como INT, para isso os valores precisam estar declarados como DOUBLE ou FLOAT
 	//__________________________________________________________________________________
-
 
 	//__________________________________________________________________________________
 	//Naming Conventions

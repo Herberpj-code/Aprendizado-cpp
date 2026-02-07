@@ -1,4 +1,8 @@
-﻿  C++ FULL COURSE For Beginners - Code Beauty.cpp
+﻿  Learn C++ in 1 Hour - Mosh Hamedani - Done.cpp
+  C++ FULL COURSE For Beginners - Code Beauty.cpp
+  COMP 4300 - Dave Churchill.cpp
+C:\Users\herbe\source\repos\PrimeiroProjeto\PrimeiroProjeto\COMP 4300 - Dave Churchill.cpp(107,50): warning C4305: 'argumento': truncamento de 'double' para 'float'
+  Gerando Código...
   PrimeiroProjeto.vcxproj -> C:\Users\herbe\source\repos\PrimeiroProjeto\x64\Debug\PrimeiroProjeto.exe
   'pwsh.exe' não é reconhecido como um comando interno
   ou externo, um programa operável ou um arquivo em lotes.

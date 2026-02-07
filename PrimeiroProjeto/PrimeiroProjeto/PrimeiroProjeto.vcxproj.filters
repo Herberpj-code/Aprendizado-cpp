@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PrimeiroProjeto.cpp">
+    <ClCompile Include="COMP 4300 - Dave Churchill.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Learn C++ in 1 Hour - Mosh Hamedani - Done.cpp">
