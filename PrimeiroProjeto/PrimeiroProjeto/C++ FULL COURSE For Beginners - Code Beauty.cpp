@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 //using namespace std; // Maravilhoso de usar, mas como boa prática não estou usando no momento;
 
@@ -6,6 +7,29 @@ int main()
 {
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
+
+	// Desenhando formas usando c++
+
+	int height, width;
+	char symbol;
+	
+	std::cout << "Por favor insira a altura do retângulo: ";
+	std::cin >> height;
+	std::cout << "Por favor insira o comprimento do retângulo: ";
+	std::cin >> width;
+	std::cout << "Entre o símbolo que formará o retângulo: ";
+	std::cin >> symbol;
+
+
+	for (int h = 0; h < height; h++)
+	{
+		for (int w = 0; w < width; w++)
+		{
+			std::cout << std::setw(3) << symbol;  //acabei de descobrir que o setw precisa do std:: e também da biblioteca iomanip, funcionam juntos;
+		}
+			std::cout << "\n";
+	}
+	
 
 
 	//==============================================================================
