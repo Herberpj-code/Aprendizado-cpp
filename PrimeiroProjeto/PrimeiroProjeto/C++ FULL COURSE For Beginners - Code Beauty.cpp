@@ -1,11 +1,69 @@
 #include <iostream>
 
-//using namespace std;
+//using namespace std; // Maravilhoso de usar, mas como boa prática não estou usando no momento;
 
 int main()
 {
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
+
+
+
+
+
+	//==============================================================================
+	//For Loops - Exercícios
+	// Fatorial de um número
+	//exemplo:  6! = 1 * 2 * 3 * 4 * 5 *6 = 720
+
+	//int number;
+	//std::cout << "Digite seu número: ";
+	//std::cin >> number;
+	//int factorial = 1;
+
+	//Ainda nao tive contato com For, portanto não tentei resolver sozinho visto que não tenho certeza da sintaxe e não acho justo pesquisar por fora da video-aula.
+	//for (int counter = 1;  counter <= number ; counter++)
+	//{
+	//	factorial = factorial * counter; // perfeito, entendi 100% e o for é exatamente como eu me lembrava que seria
+	//}
+
+	// testando com o algoritmo ao contrário que também da certo
+	//for (int counter = number; counter >= 1; counter--)
+	//{
+	//	factorial = factorial * counter;
+	//}
+
+	//std::cout << "O fatorial é = " << factorial;
+	//==============================================================================
+
+
+	//==============================================================================
+	//Do While exercício
+	//int userPin = 1234, pin, errorCounter = 0;
+
+	//do {
+	//	std::cout << "Pin: ";
+	//	std::cin >> pin;
+	//	
+	//	if (pin != userPin)
+	//	{
+	//		errorCounter++;	// Aumenta o contador de erro se o Pin for diferente
+	//	}
+	//
+	//	} while (errorCounter < 3 && pin != userPin);  // Enquanto o contador for menor que 3 e ao mesmo tempo o Pin digitado é diferente do pin declarado, executará o codigo do DO e também a condição de IF embaixo
+	//	{
+	//	if (errorCounter < 3) // Se o contador de erro ainda for menor que 3 e a condição do Pin for falsa, ou seja, o usuáriuo acertou, ele executará o primeiro cout do IF.
+	//		{
+	//			std::cout << "Você digitou corretamente";
+	//		}
+	//	else											// Se ainda estiver incorreto após as 3 tentativas, ele executará o cout abaixo do else
+	//		{
+	//			std::cout << "Sua conta foi bloqueada";
+	//		}
+	//	}
+	//  Nao vou mentir que essa lógica final estou tendo dificuldades pra entender, preciso de mais casos
+	//==============================================================================
+
 
 	//==============================================================================
 	//Como um bom programador, fui resolver um problema e criei outro, arrumei o UTF-8 que tava dando pau no vscode e buguei o do visual studio kkkkkkkkkkk

@@ -4,25 +4,25 @@
 
 class Student //classe dos estudantes
 {
-    std::string m_first =   "First"; // Inicializando as variáveis
+    std::string m_first =   "First"; // Inicializando as variï¿½veis
     std::string m_last  =   "Last";
     int         m_id    =    0;
     float       m_avg   =    0;
 
 public:
 
-    Student() {}  // Função construtora vazia
+    Student() {}  // Funï¿½ï¿½o construtora vazia
 
-    Student(std::string first, std::string last, int id, float avg) //Função construtora passando os argumentos com as variáveis
+    Student(std::string first, std::string last, int id, float avg) //Funï¿½ï¿½o construtora passando os argumentos com as variï¿½veis
         : m_first   (first)
-        , m_last    (last)      //Atribuinto os valores declarados na função construtora para os valores das variáveis privadas.
+        , m_last    (last)      //Atribuinto os valores declarados na funï¿½ï¿½o construtora para os valores das variï¿½veis privadas.
         , m_id      (id)
         , m_avg     (avg)
     {
     }
 
 
-    //Funções para chamar os atributos declarados nas classes
+    //Funï¿½ï¿½es para chamar os atributos declarados nas classes
     std::string getFirst()
     {
         return m_first;
@@ -44,17 +44,17 @@ public:
     }
 
     /*
-    * void print() const  <-- o "const" no final está declarando a função como const, então os atributos não poderiam ser alterados dentro da função...
-    * isso também abre a possibilidade de criarmos estudantes como const para não serem alterados, exemplo abaixo.
+    * void print() const  <-- o "const" no final estï¿½ declarando a funï¿½ï¿½o como const, entï¿½o os atributos nï¿½o poderiam ser alterados dentro da funï¿½ï¿½o...
+    * isso tambï¿½m abre a possibilidade de criarmos estudantes como const para nï¿½o serem alterados, exemplo abaixo.
     */
     void print() const
     {
-        std::cout << m_first << " " << m_last << " ";    // Função que mostrará os dados dos estudantes que forem invocados por ela.
+        std::cout << m_first << " " << m_last << " ";    // Funï¿½ï¿½o que mostrarï¿½ os dados dos estudantes que forem invocados por ela.
         std::cout << m_id << " " << m_avg << "\n";
     }
 };
 
-//Exemplo de função "machine learning" onde você não quer que os dados sejam alterados, então você coloca o dado como "const" por isso o const Data, o "&" significa que sua função está pegando as informações por referência
+//Exemplo de funï¿½ï¿½o "machine learning" onde vocï¿½ nï¿½o quer que os dados sejam alterados, entï¿½o vocï¿½ coloca o dado como "const" por isso o const Data, o "&" significa que sua funï¿½ï¿½o estï¿½ pegando as informaï¿½ï¿½es por referï¿½ncia
 //void doMachineLearning(const Data& d)
 //{
    // d.getValue();
@@ -94,7 +94,7 @@ public:
     {
         for (const auto& s : m_students)
         {
-            s.print();  // usando a função print para mostrar todos os estudantes do vetor
+            s.print();  // usando a funï¿½ï¿½o print para mostrar todos os estudantes do vetor
         }
     }
      
@@ -115,9 +115,9 @@ int REMOVERmain(int argc, char * argv[])
     comp4300.print();
     //const Student s3("Herber", "Pucinelli Jr", 204334, 9.23); <--- Estudante criado como const
 
-    //std::cout << s3.getLast() << "\n";  // Mostrará o ultimo nome do estudante 3
+    //std::cout << s3.getLast() << "\n";  // Mostrarï¿½ o ultimo nome do estudante 3
 
-    //s3.print(); //Chamando o Student s3 com a função print, mostrando todos os dados dele
+    //s3.print(); //Chamando o Student s3 com a funï¿½ï¿½o print, mostrando todos os dados dele
 
     return 0;
 }

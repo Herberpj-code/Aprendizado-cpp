@@ -1,20 +1,20 @@
 #include <iostream>
-#include <locale.h> //Biblioteca necessária para usar palavras com acento nas strings.
-#include <cmath> //Habilita diversas funções matemáticas de forma simples.
-#include <cstdlib> //Habilita funções de randomização.
-#include <ctime> //Habilita funções com horários e dias
+#include <locale.h> //Biblioteca necessï¿½ria para usar palavras com acento nas strings.
+#include <cmath> //Habilita diversas funï¿½ï¿½es matemï¿½ticas de forma simples.
+#include <cstdlib> //Habilita funï¿½ï¿½es de randomizaï¿½ï¿½o.
+#include <ctime> //Habilita funï¿½ï¿½es com horï¿½rios e dias
 
 using namespace std;
 
 int ohmyboy() 
 {	
-	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
+	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "ï¿½".
 
 	//system("cls");  // Usado para deixar o console limpo
 
 
 	//__________________________________________________________________________________
-	//Solução para o programa de rodar o dado.
+	//Soluï¿½ï¿½o para o programa de rodar o dado.
 	//const int minValue = 1;
 	//const int maxValue = 6;
 
@@ -29,7 +29,7 @@ int ohmyboy()
 	//__________________________________________________________________________________
 	//long elapseSeconds = time(nullptr); //Randomiza o tempo a partir de Janeiro de 1970
 	//srand(elapseSeconds);
-	//int number = rand() % 10; //Gera o número aleatório de segundos e faz o modulo dividido por 10.
+	//int number = rand() % 10; //Gera o nï¿½mero aleatï¿½rio de segundos e faz o modulo dividido por 10.
 	//cout << number;
 	//__________________________________________________________________________________
 
@@ -37,81 +37,81 @@ int ohmyboy()
 
 	//__________________________________________________________________________________
 	//Aula de narrowing
-	//int number = 1'000'000; // é possível usar as aspas simples para separar as casas dos números para tornar o código mais legível.
-	//short another = number; // Esse comando vai "estreitar" o número, seja la o que significa isso. no Short só vai até 2 bytes, o int vai até 4 bytes, entao ele vai tentar ler o maximo possível aparentemente.
+	//int number = 1'000'000; // ï¿½ possï¿½vel usar as aspas simples para separar as casas dos nï¿½meros para tornar o cï¿½digo mais legï¿½vel.
+	//short another = number; // Esse comando vai "estreitar" o nï¿½mero, seja la o que significa isso. no Short sï¿½ vai atï¿½ 2 bytes, o int vai atï¿½ 4 bytes, entao ele vai tentar ler o maximo possï¿½vel aparentemente.
 	//cout << another;
 	//__________________________________________________________________________________
 
 
 	//__________________________________________________________________________________
-	//aula de tipo de números (decimal, binário e hexadecimal)
-	//unsigned int number = -255; //a tipagem de "unsigned" não permite o número ser negativo, o resultado disso vai ser que o compilador vai gerar números aleatórios do que estiver na memória do sistema naquele momento.
+	//aula de tipo de nï¿½meros (decimal, binï¿½rio e hexadecimal)
+	//unsigned int number = -255; //a tipagem de "unsigned" nï¿½o permite o nï¿½mero ser negativo, o resultado disso vai ser que o compilador vai gerar nï¿½meros aleatï¿½rios do que estiver na memï¿½ria do sistema naquele momento.
 	//evitar usar o unsigned.
-	//int number = 0b11111111; //Está em binário e vai mostrar 255
-	//int number = 0xff; //Éstá em hexadecimal e vai mostrar 255
+	//int number = 0b11111111; //Estï¿½ em binï¿½rio e vai mostrar 255
+	//int number = 0xff; //ï¿½stï¿½ em hexadecimal e vai mostrar 255
 	//cout << number;
 	//__________________________________________________________________________________
 
 	//__________________________________________________________________________________
-	//aula de Inicialização de variáveis
+	//aula de Inicializaï¿½ï¿½o de variï¿½veis
 	//double price = 99.99;
-	//float taxaDeJuros = 3.67F; //se você não inserir o "F" de float no final do número (pode ser maiúsculo ou minúsculo, tanto faz), o compilador vai tratatar a variável como double, mesmo escrito float.
-	//long fileSize = 9000L; //Mesma coisa que o F do Float, precisa colocar o L no final para o compilador tratar ele como Long, se não ele vai tratar ele como inteiro ou double dependendo de como está apresentado o valor.
+	//float taxaDeJuros = 3.67F; //se vocï¿½ nï¿½o inserir o "F" de float no final do nï¿½mero (pode ser maiï¿½sculo ou minï¿½sculo, tanto faz), o compilador vai tratatar a variï¿½vel como double, mesmo escrito float.
+	//long fileSize = 9000L; //Mesma coisa que o F do Float, precisa colocar o L no final para o compilador tratar ele como Long, se nï¿½o ele vai tratar ele como inteiro ou double dependendo de como estï¿½ apresentado o valor.
 	//char letter = 'a';
 	//bool isValid = true;
-	//auto tantoFaz = false; // Aqui o compilador está tratando como bool, quando se usa auto o compilador tenta encontrar qual é o tipo correto.
+	//auto tantoFaz = false; // Aqui o compilador estï¿½ tratando como bool, quando se usa auto o compilador tenta encontrar qual ï¿½ o tipo correto.
 
-	//int number {}; //Inicializando sem valor, o compilador inicia a variável atribuindo "0" para ela.
+	//int number {}; //Inicializando sem valor, o compilador inicia a variï¿½vel atribuindo "0" para ela.
 	//__________________________________________________________________________________
 
 
 	//__________________________________________________________________________________
 	//Entendendo os bytes que o c++ utiliza
-	// tipo int = 4 bytes = suporta números de -2bilhões até +2bilhões
-	// tipo short = 2 bytes = suporta números de -32.768 até +32.768
-	// tipo long = 4 bytes = suporta números de -2bilhões até +2bilhões
-	// tipo long long =  8 bytes = suporta números gigantescos.
+	// tipo int = 4 bytes = suporta nï¿½meros de -2bilhï¿½es atï¿½ +2bilhï¿½es
+	// tipo short = 2 bytes = suporta nï¿½meros de -32.768 atï¿½ +32.768
+	// tipo long = 4 bytes = suporta nï¿½meros de -2bilhï¿½es atï¿½ +2bilhï¿½es
+	// tipo long long =  8 bytes = suporta nï¿½meros gigantescos.
 
-	//tipo float = 4 bytes = numeros de -3.4E38 até + 3.4E38
-	//tipo double = 8 bytes = numeros de -1.7E308 até + 1.7E308
-	//tipo long double = 8 bytes = numeros de 3.4E932 até + 3.4E932
+	//tipo float = 4 bytes = numeros de -3.4E38 atï¿½ + 3.4E38
+	//tipo double = 8 bytes = numeros de -1.7E308 atï¿½ + 1.7E308
+	//tipo long double = 8 bytes = numeros de 3.4E932 atï¿½ + 3.4E932
 	//tipo bool = 1 byte = true/false
 	//tipo char = 1 byte = strings
 	//__________________________________________________________________________________
 
 	//__________________________________________________________________________________
-	//Exercício, o usuário deve inserir o raio de um círculo e o programa calcular a área do circulo com esse dado. O PAI DEITOU D+ NESSE EXERCÍCIO SEHLOKO
+	//Exercï¿½cio, o usuï¿½rio deve inserir o raio de um cï¿½rculo e o programa calcular a ï¿½rea do circulo com esse dado. O PAI DEITOU D+ NESSE EXERCï¿½CIO SEHLOKO
 	//double raio;
 	//cout << "Insira o Raio do Circulo: ";
 	//cin >> raio;
 	//double pi = 3.14;
 	//double area = pi * pow(raio, 2);
-	//cout << "A área do círculo é: " << area;
+	//cout << "A ï¿½rea do cï¿½rculo ï¿½: " << area;
 	//__________________________________________________________________________________
 
 
 	//__________________________________________________________________________________
-	//Aula das expressões matemáticas utilizando a biblioteca <cmath>
-	//double result = pow(2, 3);//A função "pow" é de elevar a potência, o primeiro número é elevado a potência do segundo, nesse caso seria 2³, o que daria o resultado de 8
+	//Aula das expressï¿½es matemï¿½ticas utilizando a biblioteca <cmath>
+	//double result = pow(2, 3);//A funï¿½ï¿½o "pow" ï¿½ de elevar a potï¿½ncia, o primeiro nï¿½mero ï¿½ elevado a potï¿½ncia do segundo, nesse caso seria 2ï¿½, o que daria o resultado de 8
 	//cout << result;
-	//double result = floor(1.2); //exemplo, "floor" é uma função matemática para arredondar o número.
+	//double result = floor(1.2); //exemplo, "floor" ï¿½ uma funï¿½ï¿½o matemï¿½tica para arredondar o nï¿½mero.
 	//cout << result;
 	//__________________________________________________________________________________
 
 
 
 	//__________________________________________________________________________________
-	//Exercício para converter a temperatura de Celsius para Fahrenheit, minha resolução;
+	//Exercï¿½cio para converter a temperatura de Celsius para Fahrenheit, minha resoluï¿½ï¿½o;
 
 	//double celsius;
 	//	cout << "Digite a temperatura em Celsius: ";
 	//cin >> celsius;
 	//double fahrenheit = (celsius * 1.8) + 32;
-	//cout << "A temperatura em Fahrenheit é: " << fahrenheit;
+	//cout << "A temperatura em Fahrenheit ï¿½: " << fahrenheit;
 	//__________________________________________________________________________________
 
 	//__________________________________________________________________________________
-	//Aula para entender como usar valores digitados pelo usuário no console
+	//Aula para entender como usar valores digitados pelo usuï¿½rio no console
 	//cout << "Insira o valor para x e y: ";
 	//double x;
 	//double y;
@@ -122,7 +122,7 @@ int ohmyboy()
 
 
 	//__________________________________________________________________________________
-	//Exercício para apresentar os valores de venda, do imposto do estado, do condado e a soma desses impostos, o pai deitou na solução
+	//Exercï¿½cio para apresentar os valores de venda, do imposto do estado, do condado e a soma desses impostos, o pai deitou na soluï¿½ï¿½o
 	//double sales = 95000;
 	//double stateTax = 0.04;
 	//double countyTax = 0.02;
@@ -138,7 +138,7 @@ int ohmyboy()
 
 
 	//__________________________________________________________________________________
-	//Escrevendo no console e combinando a string com as variáveis
+	//Escrevendo no console e combinando a string com as variï¿½veis
 	//int x = 10;
 	//int y = 15;
 
@@ -147,7 +147,7 @@ int ohmyboy()
 	//__________________________________________________________________________________
 
 	//__________________________________________________________________________________
-	// Exercício de cálculo
+	// Exercï¿½cio de cï¿½lculo
 	//double y = 5;
 	//double x = 10;
 	//double z = (x + 10) / (3 * y);
@@ -156,7 +156,7 @@ int ohmyboy()
 	//__________________________________________________________________________________
 
 	//__________________________________________________________________________________
-	//double x = 1 + 2 * 3; //de forma bem obvia o resultado dessa equação é 7 lol multiplicação e divisão só tem menos prioridade do que "(Instruções dentro de parenteses)".
+	//double x = 1 + 2 * 3; //de forma bem obvia o resultado dessa equaï¿½ï¿½o ï¿½ 7 lol multiplicaï¿½ï¿½o e divisï¿½o sï¿½ tem menos prioridade do que "(Instruï¿½ï¿½es dentro de parenteses)".
 	//std::cout << x;
 	//__________________________________________________________________________________
 
@@ -164,12 +164,12 @@ int ohmyboy()
 	//__________________________________________________________________________________
 	//int x = 10;
 	//int y = 3;
-	//int z = x % y; // O operador "%" é o modulo, ele apresenta o resto da divisão de 2 valores.
-	//z++; // Esse operador "++" é de incremento, ele vai acrescentar 1 a cada vez que for chamado.
-	//int f = z++; // O valor de F será o valor de Z sem o incremento, mas o valor de z será incrementado em 1
-	//int g = ++z; // O valor de G será o valor de Z+1 fazendo dessa forma pois os operadores de soma estão vindo antes do valor de Z, o valor de Z também será Z+1.
+	//int z = x % y; // O operador "%" ï¿½ o modulo, ele apresenta o resto da divisï¿½o de 2 valores.
+	//z++; // Esse operador "++" ï¿½ de incremento, ele vai acrescentar 1 a cada vez que for chamado.
+	//int f = z++; // O valor de F serï¿½ o valor de Z sem o incremento, mas o valor de z serï¿½ incrementado em 1
+	//int g = ++z; // O valor de G serï¿½ o valor de Z+1 fazendo dessa forma pois os operadores de soma estï¿½o vindo antes do valor de Z, o valor de Z tambï¿½m serï¿½ Z+1.
 
-	//std::cout << z; // O valor não vai ter casas decimais se os valores estiverem declarados como INT, para isso os valores precisam estar declarados como DOUBLE ou FLOAT
+	//std::cout << z; // O valor nï¿½o vai ter casas decimais se os valores estiverem declarados como INT, para isso os valores precisam estar declarados como DOUBLE ou FLOAT
 	//__________________________________________________________________________________
 
 	//__________________________________________________________________________________
@@ -177,17 +177,17 @@ int ohmyboy()
 	//int file_size;   //Snake Case
 	//int FileSize;    //Pascal Case
 	//int fileSize;	   //Camel Case (o que eu prefiro)
-	//int iFileSize;   //Notação Húngara (Não é mais utilizado amplamente), o I na frente é pelo tipo da variável, nesse caso é I pois é inteiro
+	//int iFileSize;   //Notaï¿½ï¿½o Hï¿½ngara (Nï¿½o ï¿½ mais utilizado amplamente), o I na frente ï¿½ pelo tipo da variï¿½vel, nesse caso ï¿½ I pois ï¿½ inteiro
 	//__________________________________________________________________________________
 
 	//__________________________________________________________________________________
-	//const double pi = 3.14; // Agora não é mais possível mudar o valor de PI colocando o const na frente, se você tentar forçar o valor vai dar um erro.
-	//pi = 0;  // Esse código não funcionaria
+	//const double pi = 3.14; // Agora nï¿½o ï¿½ mais possï¿½vel mudar o valor de PI colocando o const na frente, se vocï¿½ tentar forï¿½ar o valor vai dar um erro.
+	//pi = 0;  // Esse cï¿½digo nï¿½o funcionaria
 	//__________________________________________________________________________________
 
 
 	//__________________________________________________________________________________
-	//Exercício, transformando A em B e B em A
+	//Exercï¿½cio, transformando A em B e B em A
 	//int a = 1;
 	//int b = 2;
 	//int temp = a;
@@ -201,14 +201,14 @@ int ohmyboy()
 
 
 	//__________________________________________________________________________________
-	//int fileSize = 100; //É boa prática sempre inicializar suas variáveis
+	//int fileSize = 100; //ï¿½ boa prï¿½tica sempre inicializar suas variï¿½veis
 	//int counter = 0;
 	//double sales = 9.99;
 	//std::cout << fileSize << "\n";
 	//__________________________________________________________________________________
 
-	//std::cout << "Hello World"; //statement, ta dizendo ao sistema o que está fazendo, deve sempre terminar com ";"
+	//std::cout << "Hello World"; //statement, ta dizendo ao sistema o que estï¿½ fazendo, deve sempre terminar com ";"
 
 
-	return 0; //Para garantir que termine com code 0, se o programa encontrar um erro ele não vai retornar 0, significando que falhou, se retornar 0, é porque a rodada foi um sucesso, por isso a "main" é int(inteiro).
+	return 0; //Para garantir que termine com code 0, se o programa encontrar um erro ele nï¿½o vai retornar 0, significando que falhou, se retornar 0, ï¿½ porque a rodada foi um sucesso, por isso a "main" ï¿½ int(inteiro).
 }
