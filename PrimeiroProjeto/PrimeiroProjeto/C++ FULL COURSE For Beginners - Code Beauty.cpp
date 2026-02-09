@@ -8,8 +8,70 @@ int main()
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
 
 
+	//==============================================================================
+	//Programa de taboada completa do 1 ao 10 completa e de 1x
+
+	//for (int i = 1; i <= 10; i++)
+	//{
+	//	for (int j = 1; j <= 10; j++)
+	//	{
+	//		std::cout << i << " x " << j << " = " << i * j << "\n";
+	//	}
+	//	std::cout << "\n";
+	//}
+	//==============================================================================
+
+	//==============================================================================
+	// Mais exemplos de nested for and while
+	// Programa de tabuada;
+
+	
+	//int number;
+	//int multiTable = 1;
+
+	//std::cout << "Digite o número que você quer da taboada: ";
+	//std::cin >> number;
+
+	//for (int i = 1; i <= 10; i++) // Vai executar o programa até o "i" ser igual a 10;
+	//{
+	//	do
+	//	{
+	//		multiTable = number * i;
+	//	} 
+	//	while (i > 10); // enquanto I não for maior que 10 vai printar a mensagem para o usuário
+	//	{		
+	//		std::cout << number << " " << " x " << " " << i << " " << " = " << multiTable << "\n";
+	//	}
+	//}
+	//==============================================================================
+	
 
 
+
+
+
+
+
+	//==============================================================================
+	// Nested for and while
+
+	//int grades, gradesSum = 0;
+
+	//for (int i = 0; i < 3; i++)
+	//{
+	//	do
+	//	{
+	//		std::cout << "Digite as suas notas " << i + 1 << " :";
+	//		std::cin >> grades;
+	//	} 
+	//	while (grades < 1 || grades > 5);  // Não permitindo notas abaixo de 1 e acima de 5.
+	//	{
+	//		gradesSum += grades;
+	//	}
+	//}
+
+	//std::cout << "Sua média é : " << (float)gradesSum/3; // transformando em float para dar a media correta.
+	//==============================================================================
 
 	//==============================================================================
 	//For Loops - Exercícios
