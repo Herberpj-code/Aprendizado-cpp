@@ -7,28 +7,49 @@ int main()
 {
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
-
 	// Desenhando formas usando c++
 
-	int height, width;
+
+	//Desenhando Triangulos
+
+	int length, width;
 	char symbol;
-	
-	std::cout << "Por favor insira a altura do retângulo: ";
-	std::cin >> height;
-	std::cout << "Por favor insira o comprimento do retângulo: ";
-	std::cin >> width;
-	std::cout << "Entre o símbolo que formará o retângulo: ";
+
+	std::cout << "Por favor insira o comprimento do triângulo: ";
+	std::cin >> length;
+	/*std::cout << "Por favor insira o comprimento do triângulo: ";
+	std::cin >> width;*/
+	std::cout << "Entre o símbolo que formará o triângulo: ";
 	std::cin >> symbol;
 
-
-	for (int h = 0; h < height; h++)
+	for (int i = 1; i <= length; i++)
 	{
-		for (int w = 0; w < width; w++)
+		for (int h = 1; h <= i; h++)
 		{
-			std::cout << std::setw(3) << symbol;  //acabei de descobrir que o setw precisa do std:: e também da biblioteca iomanip, funcionam juntos;
+			std::cout << std::setw(3) << symbol;
 		}
-			std::cout << "\n";
+		std::cout << "\n";
 	}
+
+
+	//Desenhando retangulos/quadrados
+	//int height, width;
+	//char symbol;
+	
+	//std::cout << "Por favor insira a altura do retângulo: ";
+	//std::cin >> height;
+	//std::cout << "Por favor insira o comprimento do retângulo: ";
+	//std::cin >> width;
+	//std::cout << "Entre o símbolo que formará o retângulo: ";
+	//std::cin >> symbol;
+	//for (int h = 0; h < height; h++)
+	//{
+	//	for (int w = 0; w < width; w++)
+	//	{
+	//		std::cout << std::setw(3) << symbol;  //acabei de descobrir que o setw precisa do std:: e também da biblioteca iomanip, funcionam juntos;
+	//	}
+	//		std::cout << "\n";
+	//}
 	
 
 
