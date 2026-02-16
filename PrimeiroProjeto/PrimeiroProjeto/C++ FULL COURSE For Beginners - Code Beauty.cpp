@@ -15,25 +15,35 @@
 
 //}
 
-void primeNumber(int number) {
-	bool isPrimeFlag = true;
+//void primeNumber(int number) {
+//	bool isPrimeFlag = true;
+//
+//	for (int i = 2; i < number; i++)
+//	{
+//		if (number % i == 0)
+//		{
+//			isPrimeFlag = false;
+//			break;
+//		}
+//	}
+//	if (isPrimeFlag)
+//	{
+//		std::cout << "O Número é primo" << "\n";
+//	}
+//	else
+//	{
+//		std::cout << "O número não é primo" << "\n";
+//	}
+//}
 
-	for (int i = 2; i < number; i++)
-	{
-		if (number % i == 0)
-		{
-			isPrimeFlag = false;
-			break;
-		}
-	}
-	if (isPrimeFlag)
-	{
-		std::cout << "O Número é primo" << "\n";
-	}
-	else
-	{
-		std::cout << "O número não é primo" << "\n";
-	}
+void showMenu()
+{
+	std::cout << "*********** MENU ***********" << "\n" <<
+		"1. Check Balance" << "\n" <<
+		"2. Deposit" << "\n" <<
+		"3. Withdraw" << "\n" <<
+		"4. Sair" << "\n" <<
+		"****************************" << "\n" << "\n" ;
 }
 
 
@@ -41,6 +51,44 @@ int main()
 {
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
+	// 
+	//==============================================================================
+	// Construindo um "caixa eletronico"
+
+	int option;
+	double balance = 500;
+	double deposit;
+	double withdraw;
+	double invest;
+
+
+	do {  //ele vai continuar apresentando as opções do showmenu e tratando com switchcase enquanto o usuário nao selecionar a opção 4 pra sair
+		showMenu();
+		std::cout << "Please choose an option: " << "\n";
+		std::cin >> option;
+		system("cls");
+		switch (option)
+		{
+		case 1: std::cout << "Seu saldo é : R$ " << balance << "\n"; break;
+		case 2: std::cout << "Digite quanto você quer depositar:  " << "\n";
+			std::cin >> deposit;
+			balance += deposit;
+			break;
+		case 3: std::cout << "Digite quanto você quer sacar: " << "\n";
+			std::cin >> withdraw;
+			if (withdraw <= balance)
+			{
+				balance -= withdraw;
+			}
+			else
+			{
+				std::cout << "Você não tem dinheiro o suficiente." << "\n";
+			}
+			break;
+		case 4: std::cout << "Obrigado por usar o caixa eletrônico!" << "\n";
+			break;
+		}
+	} while (option != 4);
 
 	
 	//==============================================================================
@@ -48,13 +96,11 @@ int main()
 
 	//Versão com função
 
-	int number;
+	//int number;
 
-	std::cout << "Digite o número para verificação: " << "\n";
-	std::cin >> number;
-
-	primeNumber(number);
-
+	//std::cout << "Digite o número para verificação: " << "\n";
+	//std::cin >> number;
+	//primeNumber(number);
 	//Versão sem a função
 	//int number;
 	//std::cout << "Number: ";

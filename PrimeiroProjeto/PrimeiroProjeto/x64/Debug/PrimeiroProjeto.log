@@ -1,4 +1,5 @@
 ﻿  C++ FULL COURSE For Beginners - Code Beauty.cpp
+C:\Users\herbe\source\repos\PrimeiroProjeto\PrimeiroProjeto\C++ FULL COURSE For Beginners - Code Beauty.cpp(62,9): warning C4101: 'invest': variável local não referenciada
   PrimeiroProjeto.vcxproj -> C:\Users\herbe\source\repos\PrimeiroProjeto\x64\Debug\PrimeiroProjeto.exe
   'pwsh.exe' não é reconhecido como um comando interno
   ou externo, um programa operável ou um arquivo em lotes.
