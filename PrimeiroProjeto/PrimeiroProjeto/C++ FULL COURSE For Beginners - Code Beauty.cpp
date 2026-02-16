@@ -3,14 +3,37 @@
 
 //using namespace std; // Maravilhoso de usar, mas como boa prática não estou usando no momento;
 
-void introduceMe(std::string name, int idade, std::string funçao, float media)
-{
-	std::cout << "Meu nome é: " << name << "\n" <<
-		"Minha idade é: " << idade << "\n" <<
-		"Minha função é: " << funçao << "\n";
-	if(media != 0)
-	std::cout << "Minha média é: " << media << "\n" << "\n";
 
+	//==============================================================================
+//void introduceMe(std::string name, int idade, std::string funçao, float media)
+//{
+//	std::cout << "Meu nome é: " << name << "\n" <<
+//		"Minha idade é: " << idade << "\n" <<
+//		"Minha função é: " << funçao << "\n";
+//	if(media != 0)
+//	std::cout << "Minha média é: " << media << "\n" << "\n";
+
+//}
+
+void primeNumber(int number) {
+	bool isPrimeFlag = true;
+
+	for (int i = 2; i < number; i++)
+	{
+		if (number % i == 0)
+		{
+			isPrimeFlag = false;
+			break;
+		}
+	}
+	if (isPrimeFlag)
+	{
+		std::cout << "O Número é primo" << "\n";
+	}
+	else
+	{
+		std::cout << "O número não é primo" << "\n";
+	}
 }
 
 
@@ -18,11 +41,52 @@ int main()
 {
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
+
 	
-	introduceMe("Herber", 34, "Programador", 7.8);
-	introduceMe("Joao", 42, "Sorveteiro", 0);
+	//==============================================================================
+	//Função para identificar se o número é primo
+
+	//Versão com função
+
+	int number;
+
+	std::cout << "Digite o número para verificação: " << "\n";
+	std::cin >> number;
+
+	primeNumber(number);
+
+	//Versão sem a função
+	//int number;
+	//std::cout << "Number: ";
+	//std::cin >> number;
 
 
+	//bool isPrimeFlag = true;
+
+	//for (int i = 2; i < number; i++)
+	//{
+	//	if (number % i == 0) // Se um número for divisível entre 2 e o numero escolhido, o módulo será 0, e será interrompido retornando que o número não é primo
+	//	{
+	//		isPrimeFlag = false;
+	//		break;
+	//	}
+	//}
+
+	//if (isPrimeFlag)
+	//{
+	//	std::cout << "O Número é primo" << "\n";
+	//}
+	//else
+	//{
+	//	std::cout << "O número não é primo" << "\n";
+	//}
+	//==============================================================================
+
+	//==============================================================================
+//	introduceMe("Herber", 34, "Programador", 7.8);
+//	introduceMe("Joao", 42, "Sorveteiro", 0);
+
+	//==============================================================================
 
 
 
