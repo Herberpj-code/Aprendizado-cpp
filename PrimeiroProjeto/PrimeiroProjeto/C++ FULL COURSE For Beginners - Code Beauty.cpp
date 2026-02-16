@@ -7,29 +7,55 @@ int main()
 {
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
+	
+
+
+
+
+
+
+	//==============================================================================
 	// Desenhando formas usando c++
+	//Desenhando triangulo de ponta cabeça
+
+	//int length, width;
+	//char symbol;
+
+	//std::cout << "Por favor insira o comprimento do triângulo: ";
+	//std::cin >> length;
+	//std::cout << "Entre o símbolo que formará o triângulo: ";
+	//std::cin >> symbol;
+
+	//for (int i = length; i >= 1; i--)
+	//{
+	//	for (int h = 1; h <= i; h++)
+	//	{
+	//		std::cout << std::setw(3) << symbol;
+	//	}
+	//	std::cout << "\n";
+	//}
 
 
 	//Desenhando Triangulos
 
-	int length, width;
-	char symbol;
+	//int length, width;
+	//char symbol;
 
-	std::cout << "Por favor insira o comprimento do triângulo: ";
-	std::cin >> length;
+	//std::cout << "Por favor insira o comprimento do triângulo: ";
+	//std::cin >> length;
 	/*std::cout << "Por favor insira o comprimento do triângulo: ";
 	std::cin >> width;*/
-	std::cout << "Entre o símbolo que formará o triângulo: ";
-	std::cin >> symbol;
+	//std::cout << "Entre o símbolo que formará o triângulo: ";
+	//std::cin >> symbol;
 
-	for (int i = 1; i <= length; i++)
-	{
-		for (int h = 1; h <= i; h++)
-		{
-			std::cout << std::setw(3) << symbol;
-		}
-		std::cout << "\n";
-	}
+	//for (int i = 1; i <= length; i++)
+	//{
+	//	for (int h = 1; h <= i; h++)
+	//	{
+	//		std::cout << std::setw(3) << symbol;
+	//	}
+	//	std::cout << "\n";
+	//}
 
 
 	//Desenhando retangulos/quadrados
@@ -50,7 +76,7 @@ int main()
 	//	}
 	//		std::cout << "\n";
 	//}
-	
+	//==============================================================================
 
 
 	//==============================================================================
