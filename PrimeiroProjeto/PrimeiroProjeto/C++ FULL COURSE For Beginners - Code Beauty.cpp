@@ -1,13 +1,26 @@
 #include <iostream>
-#include <iomanip>
+//#include <iomanip>
 
 //using namespace std; // Maravilhoso de usar, mas como boa prática não estou usando no momento;
+
+void introduceMe(std::string name, int idade, std::string funçao, float media)
+{
+	std::cout << "Meu nome é: " << name << "\n" <<
+		"Minha idade é: " << idade << "\n" <<
+		"Minha função é: " << funçao << "\n";
+	if(media != 0)
+	std::cout << "Minha média é: " << media << "\n" << "\n";
+
+}
+
 
 int main()
 {
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
 	
+	introduceMe("Herber", 34, "Programador", 7.8);
+	introduceMe("Joao", 42, "Sorveteiro", 0);
 
 
 
