@@ -58,7 +58,7 @@
 //
 //}
 
-template<typename T > // Usando o template a variável pode ser qualquer dado, é como se fosse um auto aparentemente
+//template<typename T > // Usando o template a variável pode ser qualquer dado, é como se fosse um auto aparentemente
 
 //void swap(T& a, T& b)
 //{
@@ -68,11 +68,43 @@ template<typename T > // Usando o template a variável pode ser qualquer dado, �
 //}
 
 
+//int recursiveSum(int m, int n) // Função recursiva para somar números em um intervalo
+//{
+//	if (m == n)
+//		return m;
+//	return m + recursiveSum(m + 1, n); //o m vai funcionar como um contador
+//}
+
+
 int main()
 {
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
 	// 
+	// 
+	
+	
+	
+	
+	
+	
+	
+	
+	//==============================================================================
+	//Funções recursivas
+	//Soma de números entre um intervalo
+
+	//int m = 1, n = 575;
+	
+
+	//std::cout << recursiveSum(m, n);
+	//==============================================================================
+	
+	
+	
+	
+	
+	
 	//==============================================================================
 	//Aprendendo templates
 	//int a = 5, b = 7;
