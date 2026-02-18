@@ -46,17 +46,26 @@
 //		"****************************" << "\n" << "\n" ;
 //}
 
-void menuSistema()
-{
-	std::cout << "*********** MENU ***********" << "\n" <<
-		"1. Taboada de um número" << "\n" <<
-		"2. Taboada do 1 ao 10" << "\n" <<
-		"3. Soma e Subtração" << "\n" <<
-		"4. Divisão e Multiplicação" << "\n" <<
-		"5. Módulo" << "\n" <<
-		"6. Sair" << "\n";
+//void menuSistema()
+//{
+//	std::cout << "*********** MENU ***********" << "\n" <<
+//		"1. Taboada de um número" << "\n" <<
+//		"2. Taboada do 1 ao 10" << "\n" <<
+//		"3. Soma e Subtração" << "\n" <<
+//		"4. Divisão e Multiplicação" << "\n" <<
+//		"5. Módulo" << "\n" <<
+//		"6. Sair" << "\n";
+//
+//}
 
-}
+template<typename T > // Usando o template a variável pode ser qualquer dado, é como se fosse um auto aparentemente
+
+//void swap(T& a, T& b)
+//{
+//	int temp = a;
+//	a = b;
+//	b = temp;
+//}
 
 
 int main()
@@ -64,96 +73,109 @@ int main()
 	setlocale(LC_ALL, ""); // Codigo para permitir que palavras com acento sejam lidas pelo computador, por ex: "é".
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
 	// 
+	//==============================================================================
+	//Aprendendo templates
+	//int a = 5, b = 7;
+
+	//swap(a, b);
+	//swap<int>(a, b); //Colocando o '<int>' força a invocação do parametro int das variáveis.
+
+	//std::cout << a << b;
+	//==============================================================================
+
+
 	
+
+	//==============================================================================
 	//construindo um sistema de cálculos matemáticos como exercício.
 
-	int option;
-	int multitableNumber;
-	int multiTable = 1;
-	double number1, number2;
-	char symbol;
-	
-	do {
-		menuSistema();
-		std::cout << "Por favor escolha uma opção: " << "\n";
-		std::cin >> option;
-		system("cls");
-		switch (option)
-		{
+	//int option;
+	//int multitableNumber;
+	//int multiTable = 1;
+	//double number1, number2;
+	//char symbol;
+	//
+	//do {
+	//	menuSistema();
+	//	std::cout << "Por favor escolha uma opção: " << "\n";
+	//	std::cin >> option;
+	//	system("cls");
+	//	switch (option)
+	//	{
 
-		case 1: std::cout << "Digite o número que você quer da taboada: ";
-			std::cin >> multitableNumber;
-			for (int i = 1; i <= 10; i++) // Vai executar o programa até o "i" ser igual a 10;
-			{
-				do
-				{
-					multiTable = multitableNumber * i;
-				} while (i > 10);
-				{
-					std::cout << multitableNumber << " " << " x " << " " << i << " " << " = " << multiTable << "\n";
-				}
-			} break;
+	//	case 1: std::cout << "Digite o número que você quer da taboada: ";
+	//		std::cin >> multitableNumber;
+	//		for (int i = 1; i <= 10; i++) // Vai executar o programa até o "i" ser igual a 10;
+	//		{
+	//			do
+	//			{
+	//				multiTable = multitableNumber * i;
+	//			} while (i > 10);
+	//			{
+	//				std::cout << multitableNumber << " " << " x " << " " << i << " " << " = " << multiTable << "\n";
+	//			}
+	//		} break;
 
-		case 2:
-			for (int i = 1; i <= 10; i++)
-			{
-				for (int j = 1; j <= 10; j++)
-				{
-					std::cout << i << " x " << j << " = " << i * j << "\n";
-				}
-				std::cout << "\n";
-			}break;
+	//	case 2:
+	//		for (int i = 1; i <= 10; i++)
+	//		{
+	//			for (int j = 1; j <= 10; j++)
+	//			{
+	//				std::cout << i << " x " << j << " = " << i * j << "\n";
+	//			}
+	//			std::cout << "\n";
+	//		}break;
 
-		case 3:
-				std::cout << "Digite o símbolo da operação que você quer realizar: ";
-				std::cout << "Use '+' para adição e '-' para subtração: " << "\n";
-				std::cin >> symbol;
-				std::cout << "Digite os números da operação: " << "\n";
-				std::cout << "Numero 1: ";
-				std::cin >> number1;
-				std::cout << "Numero 2: ";
-				std::cin >> number2;
-				std::cout << "\n";
+	//	case 3:
+	//			std::cout << "Digite o símbolo da operação que você quer realizar: ";
+	//			std::cout << "Use '+' para adição e '-' para subtração: " << "\n";
+	//			std::cin >> symbol;
+	//			std::cout << "Digite os números da operação: " << "\n";
+	//			std::cout << "Numero 1: ";
+	//			std::cin >> number1;
+	//			std::cout << "Numero 2: ";
+	//			std::cin >> number2;
+	//			std::cout << "\n";
 
-				switch (symbol)
-				{
-				case '+': std::cout << "Soma: " << number1 + number2 << "\n"; break;
-				case '-': std::cout << "Subtração: " << number1 - number2 << "\n"; break;
-				default: std::cout << "Essa operação não existe, por favor insira um operador válido" << "\n" << "\n"; break;
-				}break;
-				
-		case 4:
-				std::cout << "Digite o símbolo da operação que você quer realizar" << "\n";
-				std::cout << "Use '*' para multiplicação e '/' para divisão: " << "\n";
-				std::cin >> symbol;
-				std::cout << "Digite os números da operação: " << "\n";
-				std::cout << "Numero 1: ";
-				std::cin >> number1;
-				std::cout << "Numero 2: ";
-				std::cin >> number2;
-				std::cout << "\n";
+	//			switch (symbol)
+	//			{
+	//			case '+': std::cout << "Soma: " << number1 + number2 << "\n"; break;
+	//			case '-': std::cout << "Subtração: " << number1 - number2 << "\n"; break;
+	//			default: std::cout << "Essa operação não existe, por favor insira um operador válido" << "\n" << "\n"; break;
+	//			}break;
+	//			
+	//	case 4:
+	//			std::cout << "Digite o símbolo da operação que você quer realizar" << "\n";
+	//			std::cout << "Use '*' para multiplicação e '/' para divisão: " << "\n";
+	//			std::cin >> symbol;
+	//			std::cout << "Digite os números da operação: " << "\n";
+	//			std::cout << "Numero 1: ";
+	//			std::cin >> number1;
+	//			std::cout << "Numero 2: ";
+	//			std::cin >> number2;
+	//			std::cout << "\n";
 
-				switch (symbol)
-				{
-				case '*': std::cout << "Multiplicação: " << number1 * number2 << "\n"; break;
-				case '/': std::cout << "Divisão: " << number1 / number2 << "\n"; break;
-				default: std::cout << "Essa operação não existe, por favor insira um operador válido" << "\n" << "\n"; break;
-				}break;
+	//			switch (symbol)
+	//			{
+	//			case '*': std::cout << "Multiplicação: " << number1 * number2 << "\n"; break;
+	//			case '/': std::cout << "Divisão: " << number1 / number2 << "\n"; break;
+	//			default: std::cout << "Essa operação não existe, por favor insira um operador válido" << "\n" << "\n"; break;
+	//			}break;
 
-		case 5:
-				std::cout << "Digite os números desejados para apresentar o módulo da divisão: " << "\n";
-				std::cout << "Numero 1: ";
-				std::cin >> number1;
-				std::cout << "Numero 2: ";
-				std::cin >> number2;
-				std::cout << "\n";
-				std::cout << "O módulo dos números é: " << (int)number1 % (int)number2 << "\n"; break;
+	//	case 5:
+	//			std::cout << "Digite os números desejados para apresentar o módulo da divisão: " << "\n";
+	//			std::cout << "Numero 1: ";
+	//			std::cin >> number1;
+	//			std::cout << "Numero 2: ";
+	//			std::cin >> number2;
+	//			std::cout << "\n";
+	//			std::cout << "O módulo dos números é: " << (int)number1 % (int)number2 << "\n"; break;
 
-		}
-		
+	//	}
+	//	
 
-	} while (option != 6);
-	
+	//} while (option != 6);
+	//==============================================================================
 	
 	
 	
