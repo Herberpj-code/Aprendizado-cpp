@@ -78,13 +78,27 @@
 
 class youtubeChannel {
 public:
-	std::string name;
-	std::string owner;
-	int subscribersCount;
+	std::string name = "Name";
+	std::string owner = "Owner";
+	int subscribersCount = 0;
 	std::list<std::string> publishedVideoTitles;
+
+	youtubeChannel	(std::string c_name, std::string c_owner, int c_subscribersCount/*, std::string c_publishedVideoTitles*/) //Construtor de objeto, nao consegui incluir a lista de videos ainda
+		//: name (c_name) // No curso é declarado as variáveis dentro dos colchetes, mas como eu aprendi a associar as variáveis dessa forma, ja fiz direto
+		//, owner (c_owner)
+		//, subscribersCount (c_subscribersCount)
+		//, publishedVideoTitles (c_publishedVideoTitles)
+	{
+		name = c_name;
+		owner = c_owner;
+		subscribersCount = c_subscribersCount;
+		/*publishedVideoTitles = c_publishedVideoTitles;*/
+	}
+
 private:
 	std::string email;
 	std::string address;
+
 
 };
 
@@ -98,17 +112,33 @@ int main()
 	//==============================================================================
 	//PRIMEIRA INTERAÇÃO COM PROGRAMAÇÃO ORIENTADA A OBJETOS VAMOOOOOOOOOOOOOOO
 
-	youtubeChannel yTubeChannel;
-	yTubeChannel.name = "Code Beauty";
-	yTubeChannel.owner = "Saudina";
-	yTubeChannel.subscribersCount = 50000;
-	yTubeChannel.publishedVideoTitles = { "C++ For Beginners", "Css for Beginners", "Html for beginners"};
+	youtubeChannel yTubeChannel ("Code Beauty", "Saudina", 50000);
+	youtubeChannel yTubeChannel2("Joao do Caminhao", "Joazinho", 450404);
+	youtubeChannel yTubeChannel3("Roberto Videos", "Robertonio", 3424242432);
+	yTubeChannel.publishedVideoTitles.push_back("C++ for Beginners");
+	yTubeChannel.publishedVideoTitles.push_back("CSS for Beginners");
+	yTubeChannel.publishedVideoTitles.push_back("HTML for Beginners");
 
-	std::cout << yTubeChannel.name << "\n\n" << yTubeChannel.owner << "\n\n" << yTubeChannel.subscribersCount << "\n\n";
-	for (std::string videoTitle : yTubeChannel.publishedVideoTitles) {
+	std::cout << yTubeChannel.name << "\n" << yTubeChannel.owner << "\n" << yTubeChannel.subscribersCount << "\n";
+	std::cout << yTubeChannel2.name << "\n" << yTubeChannel2.owner << "\n" << yTubeChannel2.subscribersCount << "\n";
+	std::cout << yTubeChannel3.name << "\n" << yTubeChannel3.owner << "\n" << yTubeChannel3.subscribersCount << "\n";
+
+	for (std::string videoTitle : yTubeChannel.publishedVideoTitles)
+	{
 		std::cout << videoTitle << "\n";
 	}
 	
+
+		/*yTubeChannel.name = "Code Beauty";
+		yTubeChannel.owner = "Saudina";
+		yTubeChannel.subscribersCount = 50000;
+		yTubeChannel.publishedVideoTitles = { "C++ For Beginners", "Css for Beginners", "Html for beginners"};*/
+
+		//*std::cout << yTubeChannel.name << "\n\n" << yTubeChannel.owner << "\n\n" << yTubeChannel.subscribersCount << "\n\n";
+		//for (std::string videoTitle : yTubeChannel.publishedVideoTitles) {
+		//	std::cout << videoTitle << "\n";
+		
+
 	
 	
 	
