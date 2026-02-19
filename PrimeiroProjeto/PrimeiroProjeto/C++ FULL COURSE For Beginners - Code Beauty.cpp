@@ -77,22 +77,21 @@
 //}
 
 class youtubeChannel {
-public:
+private:
 	std::string name = "Name";
 	std::string owner = "Owner";
 	int subscribersCount = 0;
 	std::list<std::string> publishedVideoTitles;
 
-	youtubeChannel	(std::string c_name, std::string c_owner, int c_subscribersCount/*, std::string c_publishedVideoTitles*/) //Construtor de objeto, nao consegui incluir a lista de videos ainda
-		//: name (c_name) // No curso é declarado as variáveis dentro dos colchetes, mas como eu aprendi a associar as variáveis dessa forma, ja fiz direto
+public:
+	youtubeChannel	(std::string c_name, std::string c_owner) //Construtor de objeto, 
+		//: name (c_name) // No curso é declarado as variáveis dentro dos colchetes, mas como eu aprendi a associar as variáveis dessa forma, ja fiz direto para treinar
 		//, owner (c_owner)
 		//, subscribersCount (c_subscribersCount)
 		//, publishedVideoTitles (c_publishedVideoTitles)
 	{
 		name = c_name;
 		owner = c_owner;
-		subscribersCount = c_subscribersCount;
-		/*publishedVideoTitles = c_publishedVideoTitles;*/
 	}
 
 	void getInfo()
@@ -101,14 +100,27 @@ public:
 
 		for (std::string videoTitle : publishedVideoTitles)
 		{
-			std::cout << videoTitle << "\n\n";
+			std::cout << videoTitle << "\n";
+		}
+	}
+	
+	void subscribe()
+	{
+		subscribersCount++;
+	}
+
+	void unsubscribe()
+	{
+		if (subscribersCount > 0)
+		{
+			subscribersCount--;
 		}
 	}
 
-private:
-	std::string email;
-	std::string address;
-
+	void publishVideo(std::string title)
+	{
+		publishedVideoTitles.push_back(title);
+	}
 
 };
 
@@ -119,21 +131,38 @@ int main()
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
 	// 
 	// 
+
+	//==============================================================================
+	//Encapsulamento
+
+
+
+
 	//==============================================================================
 	//PRIMEIRA INTERAÇÃO COM PROGRAMAÇÃO ORIENTADA A OBJETOS VAMOOOOOOOOOOOOOOO
 
-	youtubeChannel yTubeChannel ("Code Beauty", "Saudina", 50000);
-	youtubeChannel yTubeChannel2("Joao do Caminhao", "Joazinho", 450404);
-	youtubeChannel yTubeChannel3("Roberto Videos", "Robertonio", 3424242432);
-	yTubeChannel.publishedVideoTitles.push_back("C++ for Beginners");
-	yTubeChannel.publishedVideoTitles.push_back("CSS for Beginners");
-	yTubeChannel.publishedVideoTitles.push_back("HTML for Beginners");
+
+	youtubeChannel yTubeChannel ("Code Beauty", "Saudina");
+
+	//youtubeChannel yTubeChannel2("Joao do Caminhao", "Joazinho", 450404);
+	//youtubeChannel yTubeChannel3("Roberto Videos", "Robertonio", 3424242432);
+	//yTubeChannel.publishedVideoTitles.push_back("C++ for Beginners");
+	//yTubeChannel.publishedVideoTitles.push_back("CSS for Beginners");
+	//yTubeChannel.publishedVideoTitles.push_back("HTML for Beginners");
+
+
+	yTubeChannel.publishVideo("CSS For Beginners");
+	yTubeChannel.publishVideo("HTML For Beginners");
+	yTubeChannel.publishVideo("C++ For Beginners");
+	yTubeChannel.subscribe();
+	yTubeChannel.subscribe();
+	yTubeChannel.subscribe();
+	yTubeChannel.unsubscribe();
+
 
 	yTubeChannel.getInfo();
-	yTubeChannel2.getInfo();
-	yTubeChannel3.getInfo();
 
-	
+	//==============================================================================
 
 		/*yTubeChannel.name = "Code Beauty";
 		yTubeChannel.owner = "Saudina";
