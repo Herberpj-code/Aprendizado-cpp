@@ -1,5 +1,6 @@
 #include <iostream>
 //#include <iomanip>
+#include <list> // Permite incluir listas
 
 //using namespace std; // Maravilhoso de usar, mas como boa prática não estou usando no momento;
 
@@ -75,6 +76,18 @@
 //	return m + recursiveSum(m + 1, n); //o m vai funcionar como um contador
 //}
 
+class youtubeChannel {
+public:
+	std::string name;
+	std::string owner;
+	int subscribersCount;
+	std::list<std::string> publishedVideoTitles;
+private:
+	std::string email;
+	std::string address;
+
+};
+
 
 int main()
 {
@@ -82,10 +95,19 @@ int main()
 	//system("cls");  // Usado para deixar o console limpo dos códigos anteriores a essa linha
 	// 
 	// 
-	
-	
-	
-	
+	//==============================================================================
+	//PRIMEIRA INTERAÇÃO COM PROGRAMAÇÃO ORIENTADA A OBJETOS VAMOOOOOOOOOOOOOOO
+
+	youtubeChannel yTubeChannel;
+	yTubeChannel.name = "Code Beauty";
+	yTubeChannel.owner = "Saudina";
+	yTubeChannel.subscribersCount = 50000;
+	yTubeChannel.publishedVideoTitles = { "C++ For Beginners", "Css for Beginners", "Html for beginners"};
+
+	std::cout << yTubeChannel.name << "\n\n" << yTubeChannel.owner << "\n\n" << yTubeChannel.subscribersCount << "\n\n";
+	for (std::string videoTitle : yTubeChannel.publishedVideoTitles) {
+		std::cout << videoTitle << "\n";
+	}
 	
 	
 	
