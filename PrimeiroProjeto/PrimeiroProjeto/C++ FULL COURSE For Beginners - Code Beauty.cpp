@@ -95,6 +95,16 @@ public:
 		/*publishedVideoTitles = c_publishedVideoTitles;*/
 	}
 
+	void getInfo()
+	{
+		std::cout << name << "\n" << owner << "\n" << subscribersCount << "\n\n";
+
+		for (std::string videoTitle : publishedVideoTitles)
+		{
+			std::cout << videoTitle << "\n\n";
+		}
+	}
+
 private:
 	std::string email;
 	std::string address;
@@ -119,14 +129,10 @@ int main()
 	yTubeChannel.publishedVideoTitles.push_back("CSS for Beginners");
 	yTubeChannel.publishedVideoTitles.push_back("HTML for Beginners");
 
-	std::cout << yTubeChannel.name << "\n" << yTubeChannel.owner << "\n" << yTubeChannel.subscribersCount << "\n";
-	std::cout << yTubeChannel2.name << "\n" << yTubeChannel2.owner << "\n" << yTubeChannel2.subscribersCount << "\n";
-	std::cout << yTubeChannel3.name << "\n" << yTubeChannel3.owner << "\n" << yTubeChannel3.subscribersCount << "\n";
+	yTubeChannel.getInfo();
+	yTubeChannel2.getInfo();
+	yTubeChannel3.getInfo();
 
-	for (std::string videoTitle : yTubeChannel.publishedVideoTitles)
-	{
-		std::cout << videoTitle << "\n";
-	}
 	
 
 		/*yTubeChannel.name = "Code Beauty";
